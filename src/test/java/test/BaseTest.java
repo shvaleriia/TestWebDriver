@@ -41,7 +41,6 @@ public class BaseTest {
         return new HomePage(getDriver());
     }
 
-
     public SearchPage getSearchPage() {
         return new SearchPage(getDriver());
     }

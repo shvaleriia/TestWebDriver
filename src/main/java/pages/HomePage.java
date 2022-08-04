@@ -21,11 +21,7 @@ public class HomePage extends BasePage {
         acceptCookies.click();
     }
 
-
     public void searchByKeyword(final String keyword) {
         inputField.sendKeys(keyword);
-
-
     }
-
 }

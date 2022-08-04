@@ -8,7 +8,6 @@ public class MainTest extends BaseTest {
     private static final String SEARCH_NAME = "french bulldogs" + "\n";
     private static final long ACCEPTED_RESULT = 48;
 
-
     @Test
     public void checkThatPageContainsImage() {
         getHomePage().implicitWait(30);
@@ -16,9 +15,6 @@ public class MainTest extends BaseTest {
         getHomePage().searchByKeyword(SEARCH_NAME);
         getSearchPage().CheckSearchResult();
         Assert.assertEquals(getSearchPage().getProductResultsCount(), ACCEPTED_RESULT);
-
     }
-
-
 }
 
